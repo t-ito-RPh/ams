@@ -392,18 +392,31 @@
       color: var(--text-soft);
     }
 
-    .insert-image-box {
+    .strength-layout {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 20px;
+      align-items: start;
+    }
+
+    .strength-image-box {
       background: #fff;
       border: 1px solid var(--border);
       border-radius: 22px;
-      padding: 18px;
-      margin-top: 18px;
+      padding: 14px;
     }
 
-    .insert-image-box img {
+    .strength-image-box img {
       width: 100%;
+      max-width: 360px;
       height: auto;
       border-radius: 16px;
+      margin: 0 auto;
+    }
+
+    .strength-cards {
+      display: grid;
+      gap: 16px;
     }
 
     .contact-section {
@@ -518,11 +531,9 @@
         padding: 28px;
       }
 
-      .grid-3 {
-        grid-template-columns: 1fr;
-      }
-
-      .grid-2 {
+      .grid-3,
+      .grid-2,
+      .strength-layout {
         grid-template-columns: 1fr;
       }
     }
@@ -570,6 +581,10 @@
         position: static;
         margin-top: 12px;
         max-width: none;
+      }
+
+      .strength-image-box img {
+        max-width: 320px;
       }
     }
   </style>
@@ -671,35 +686,34 @@
     <section class="section">
       <div class="section-header">
         <div class="section-mark"></div>
-        <h2>確認体制を整える支援</h2>
-      </div>
-      <p class="section-intro">
-        表現そのものだけでなく、パッケージ案、資料、チェックリストを見比べながら、
-        社内で判断しやすい状態へ整える支援を行います。
-      </p>
-      <div class="insert-image-box">
-        <img src="strength_illustration.png" alt="書類・パッケージ案・チェックリストを確認する担当者のイラスト">
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="section-header">
-        <div class="section-mark"></div>
         <h2>強み</h2>
       </div>
-      <div class="grid-3">
-        <article class="card">
-          <h3>現場実務に落とす視点</h3>
-          <p>理屈だけで終わらせず、実際に動く運用まで意識して整理します。</p>
-        </article>
-        <article class="card">
-          <h3>薬事だけでなく品質と業務設計まで見る</h3>
-          <p>表現の問題だけでなく、確認体制やフローの弱さまで含めて見直します。</p>
-        </article>
-        <article class="card">
-          <h3>過剰な約束をしない</h3>
-          <p>安全側に倒しつつ、現実的な落としどころを考えます。曖昧に安心させる支援はしません。</p>
-        </article>
+      <p class="section-intro">
+        表現だけでなく、パッケージ案、資料、チェックリストを見比べながら、
+        社内で判断しやすい状態へ整える支援を行います。
+      </p>
+
+      <div class="strength-layout">
+        <div class="strength-image-box">
+          <img src="strength_illustration.png" alt="書類・パッケージ案・チェックリストを確認する担当者のイラスト">
+        </div>
+
+        <div class="strength-cards">
+          <article class="card">
+            <h3>現場実務に落とす視点</h3>
+            <p>理屈だけで終わらせず、実際に動く運用まで意識して整理します。</p>
+          </article>
+
+          <article class="card">
+            <h3>薬事だけでなく品質と業務設計まで見る</h3>
+            <p>表現の問題だけでなく、確認体制やフローの弱さまで含めて見直します。</p>
+          </article>
+
+          <article class="card">
+            <h3>過剰な約束をしない</h3>
+            <p>安全側に倒しつつ、現実的な落としどころを考えます。曖昧に安心させる支援はしません。</p>
+          </article>
+        </div>
       </div>
     </section>
 
