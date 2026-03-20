@@ -404,6 +404,8 @@
       border: 1px solid var(--border);
       border-radius: 22px;
       padding: 14px;
+      display: grid;
+      gap: 14px;
     }
 
     .strength-image-box img {
@@ -412,6 +414,25 @@
       height: auto;
       border-radius: 16px;
       margin: 0 auto;
+    }
+
+    .strength-subcard {
+      background: linear-gradient(180deg, #fffaf9, #fff);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 16px;
+    }
+
+    .strength-subcard h3 {
+      margin: 0 0 8px;
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    .strength-subcard p {
+      margin: 0;
+      color: var(--text-soft);
+      font-size: 0.95rem;
     }
 
     .strength-cards {
@@ -696,6 +717,11 @@
       <div class="strength-layout">
         <div class="strength-image-box">
           <img src="strength_illustration.png" alt="書類・パッケージ案・チェックリストを確認する担当者のイラスト">
+
+          <div class="strength-subcard">
+            <h3>支援のゴール</h3>
+            <p>判断基準を個人の感覚に依存させず、社内で共有できる形に整えることを重視しています。</p>
+          </div>
         </div>
 
         <div class="strength-cards">
@@ -778,9 +804,6 @@
       <p class="section-intro">
         広告表現、表示、社内確認体制、業務フローの見直しなど、
         現在の状況を整理したうえで、どこから手をつけるべきかを一緒に考えます。
-      </p>
-      <p class="note">
-        宛先：<a href="mailto:info@amsmedical.co.jp">info@amsmedical.co.jp</a>
       </p>
 
       <div class="contact-box">
