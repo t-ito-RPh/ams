@@ -98,27 +98,6 @@
       margin-bottom: 24px;
     }
 
-    .eyebrow {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      background: var(--sub-pink);
-      color: var(--text);
-      border-radius: 999px;
-      padding: 8px 14px;
-      font-size: 0.88rem;
-      margin-bottom: 16px;
-    }
-
-    .eyebrow::before {
-      content: "";
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
-      background: var(--main-dark);
-      display: inline-block;
-    }
-
     h1 {
       font-size: clamp(2rem, 4vw, 3.2rem);
       line-height: 1.35;
@@ -258,6 +237,9 @@
       font-size: 0.84rem;
       color: var(--text-soft);
       box-shadow: 0 6px 16px rgba(80, 60, 60, 0.08);
+      max-width: 260px;
+      text-align: center;
+      line-height: 1.5;
     }
 
     .section {
@@ -408,6 +390,20 @@
       border-radius: 18px;
       padding: 20px;
       color: var(--text-soft);
+    }
+
+    .insert-image-box {
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      padding: 18px;
+      margin-top: 18px;
+    }
+
+    .insert-image-box img {
+      width: 100%;
+      height: auto;
+      border-radius: 16px;
     }
 
     .contact-section {
@@ -569,6 +565,12 @@
       button {
         width: 100%;
       }
+
+      .illustration-label {
+        position: static;
+        margin-top: 12px;
+        max-width: none;
+      }
     }
   </style>
 </head>
@@ -588,7 +590,6 @@
 
     <section class="hero">
       <div>
-        <div class="eyebrow">やわらかく、でも曖昧にしない支援</div>
         <h1>
           健康食品・サプリメント事業者のための<br>
           薬事・品質管理・業務設計支援
@@ -616,7 +617,7 @@
           <div class="hero-image-wrap">
             <img src="middle_illustration.png" alt="デスクでパソコン作業をする女性のイラスト" class="hero-image">
           </div>
-          <div class="illustration-label">やさしく整理し、曖昧さを減らす支援</div>
+          <div class="illustration-label">広告表現の曖昧さを減らし、社内人材育成をサポート</div>
         </div>
       </div>
     </section>
@@ -664,6 +665,20 @@
           <h3>社内向け説明文・資料のたたき台作成</h3>
           <p>社内説明や関係者共有に使いやすい文章・構成案の作成を支援します。</p>
         </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-header">
+        <div class="section-mark"></div>
+        <h2>確認体制を整える支援</h2>
+      </div>
+      <p class="section-intro">
+        表現そのものだけでなく、パッケージ案、資料、チェックリストを見比べながら、
+        社内で判断しやすい状態へ整える支援を行います。
+      </p>
+      <div class="insert-image-box">
+        <img src="strength_illustration.png" alt="書類・パッケージ案・チェックリストを確認する担当者のイラスト">
       </div>
     </section>
 
